@@ -3,3 +3,5 @@
 .idea
 app/__pycache__/
 db.sqlite3
+core/migrations/*
+core/__pycache__/

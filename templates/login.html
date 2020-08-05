@@ -1,6 +1,8 @@
 {% extends 'base.html' %}
 {% block content%}
-<form>
-    <input type="email" placeholder="E-mail">
+<form method="post">
+    {% csrf_token %}
+    {{ form.as_p}}
+    <input type="submit" value="Logar">
 </form>
 {% endblock %}

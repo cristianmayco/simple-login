@@ -21,6 +21,6 @@ class RegisterView(CreateView):
         pass
 
 
-@login_required
-class DashboarView(TemplateView):
+# @login_required
+class DashboardView(TemplateView):
     template_name = 'dashboard.html'

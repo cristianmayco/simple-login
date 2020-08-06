@@ -121,3 +121,9 @@ AUTH_USER_MODEL = 'core.User'
 
 LOGIN_REDIRECT_URL = 'dashboard'
 LOGOUT_REDIRECT_URL = 'index'
+
+# Session: 60s * 60m * 24h * 1d
+SESSION_COOKIE_AGE = 60 * 60 * 24 * 7
+
+# Save every request
+SESSION_SAVE_EVERY_REQUEST = False
